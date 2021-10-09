@@ -20,3 +20,4 @@ Route::get('/home/Welcome',[\App\Http\Controllers\PaginaController::class,'Welc'
 Route::get('home/RegistroHotel',[\App\Http\Controllers\PaginaContoller::class,'registro'])->name('registroHotel');
 Route::get('home/RegistroHabitación',[\App\Http\Controllers\PaginaContoller::class,'registrohabitacion'])->name('registroHabitacion');
 Route::get('home/RegistroCliente',[\App\Http\Controllers\PaginaContoller::class,'registroCliente'])->name('registroCliente');
+Route::get('/mostrar',[\App\Http\Controllers\HotelController::class, 'mostrar'])->name('mostrar');

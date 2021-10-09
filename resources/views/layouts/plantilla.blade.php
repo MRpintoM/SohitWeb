@@ -36,9 +36,8 @@
                     Mostrar Datos
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="menuc" style="background:-webkit-linear-gradient(left top,#FFC300  ,#2980B9);" >
-                    <a class="dropdown-item btn btn-primary  " id="Rg_lib"  href=""   ><i class="fas fa-atlas"></i> Caracteristicas </a>
-                    <a class="dropdown-item btn btn-primary  " id="Rg_lib"  href=""   ><i class="fas fa-atlas"></i> Ventajas y Desventajas </a>
-                    <a class="dropdown-item btn btn-primary  " id="Rg_cat"  href="https://www.kali.org/docs/"   ><i class="fas fa-atlas"></i> Información Adicional </a>
+                    <a class="dropdown-item btn btn-primary  " id="Rg_lib"  href="{{route('mostrar')}}"   ><i class="fas fa-atlas"></i> Hoteles Registrados </a>
+
 
                 </div>
         </ul>
