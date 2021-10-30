@@ -78,7 +78,7 @@
 </head>
 <body>
 
-<div class="flex-center position-ref ">
+<div class="flex-center position-ref">
 
     <div class="img">
         <img src="{{asset('imagenes/Logo.png')}}" width="300" height="300">
@@ -87,7 +87,7 @@
             Bienvenido a SohitWeb
         </div>
 
-        <div class="links mt-1">
+        <div class="links">
             <a href="https://drive.google.com/drive/u/1/folders/12xHIwtjk8OwWnpDuO53XfgKk9FJQl3gd" > <img src="https://yasehacerlo.com/wp-content/uploads/2016/05/Carpetas-1.png" width="100" height="100">Documentación</a>
 
         </div>

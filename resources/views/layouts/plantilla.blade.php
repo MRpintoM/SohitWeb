@@ -10,23 +10,25 @@
 
     <style>
 
-      
-
         #top{
-           position: relative; 
-           text-align: center;
-           width: auto;
-           height: auto;
+           position: relative;  
            margin-left:auto;
            margin-right: auto;
            color: black;
-           
-            
-          
            border-radius: 10px;
            width: 700px;
            margin-top: 50px;
            
+         
+        }
+
+        #top2{
+           position: relative;  
+           margin-left:auto;
+           margin-right: auto;
+           color: rgb(255, 255, 255);
+           border-radius: 10px;
+           width: 700px;
          
         }
 
@@ -39,9 +41,6 @@
             background: radial-gradient(50% 50% at 50% 50%, rgba(0, 35, 151, 0.603) 0%, rgba(0, 25, 110, 0) 100%);
         }
 
-        
-
-      
     </style>
 </head>
 <body>
@@ -49,55 +48,63 @@
         <div class="circulo"></div>
     </div>
     
-            <nav  id="top" class="navbar navbar-expand-lg navbar-dark border border-black  shadow-sm p-2 rounded-pill">
-                <a class="navbar-brand p-1 ml-2" style="color: black" href="/"   >  SOHITWEBB    </a>
-                <button class="navbar-toggler" type="button" data-tog   gle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span  class="navbar-toggler-icon"></span>
-                </button>
-            
-                <div  id="navbarSupportedContent">
-                    <a class="navbar-brand "   href="/"  style=" color:black; "><i class="fas fa-home"></i></a>
-                </div>
-            
-                <div class="collapse navbar-collapse  " id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item dropdown  "  >
-                            <a style="color:rgb(0, 0, 0)" class="nav-link dropdown-toggle  " href="#" id="navbarDropdown" role="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Registro de Hoteles
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="menuc" style="background:-webkit-linear-gradient(left top,#FFC300  ,#2980B9);" >
-                                <a class="dropdown-item btn btn-primary  " id="Rg_lib"  href="{{route('registroHotel')}}"   ><i class="fas fa-atlas"></i> Registro Hotel </a>
-                                <a class="dropdown-item btn btn-primary  " id="Rg_lib"  href="{{route('registroHabitacion')}}"   ><i class="fas fa-atlas"></i> Registro Habitación </a>
-                                <a class="dropdown-item btn btn-primary  " id="Rg_cat"  href="{{route('registroTipoHab')}}"   ><i class="fas fa-atlas"></i> Tipo de Habitación </a>
-                                <a class="dropdown-item btn btn-primary  " id="Rg_lib"  href="{{route('registroEstadHabitacion')}}"   ><i class="fas fa-atlas"></i> Estado Habitación </a>
-                                <a class="dropdown-item btn btn-primary  " id="Rg_lib"  href="{{route('registroHabitacion')}}"   ><i class="fas fa-atlas"></i> Metodo de Pago </a>
-                                <a class="dropdown-item btn btn-primary  " id="Rg_cat"  href="{{route('registroCliente')}}"   ><i class="fas fa-atlas"></i> Pago</a>
-            
-            
-                            </div>
-                        <li class="nav-item dropdown  "  >
-                            <a style="color:rgb(2, 2, 2)" class="nav-link dropdown-toggle  " href="#" id="navbarDropdown" role="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Registro de Clientes
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="menuc" style="background:-webkit-linear-gradient(left top,#FFC300  ,#2980B9);" >
-                                <a class="dropdown-item btn btn-primary  " id="Rg_lib"  href="{{route('registroHotel')}}"   ><i class="fas fa-atlas"></i> Reserva </a>
-                                <a class="dropdown-item btn btn-primary  " id="Rg_cat"  href="{{route('registroCliente')}}"   ><i class="fas fa-atlas"></i> Registro Cliente </a>
-            
-                            </div>
-            
-                        <li class="nav-item dropdown  "  >
-                            <a style="color:rgb(0, 0, 0)" class="nav-link dropdown-toggle  " href="#" id="navbarDropdown" role="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Mostrar Datos
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="menuc" style="background:-webkit-linear-gradient(left top,#FFC300  ,#2980B9);" >
-                                <a class="dropdown-item btn btn-primary  " id="Rg_lib"  href="{{route('mostrar')}}"   ><i class="fas fa-atlas"></i> Hoteles Registrados </a>
-                                <a class="dropdown-item btn btn-primary  " id="Rg_lib"  href="{{route('mostrarhabit')}}"   ><i class="fas fa-atlas"></i> Habitaciones Registradas </a>
-            
-                            </div>
-                    </ul>
-                 </div>
-            </nav>
-         
+    <nav id="top" class="navbar navbar-expand-lg navbar-dark border border-black  shadow-sm  rounded-pill">
+        <a class="navbar-brand" style="color: black" href="/"   >  SOHITWEBB    </a>
+        <button class="navbar-toggler" type="button" data-tog   gle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span  class="navbar-toggler-icon"></span>
+        </button>
+
+        <div  id="navbarSupportedContent">
+            <a class="navbar-brand "   href="/"  style=" color:black; "><i class="fas fa-home"></i></a>
+        </div>
+        <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown"  >
+                    <a style="color:rgb(0, 0, 0)" class="nav-link dropdown-toggle  " href="#" id="navbarDropdown" role="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Registro de Hoteles
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="menuc" style="background:-webkit-linear-gradient(left top,#FFC300  ,#2980B9);" >
+                        <a class="dropdown-item btn btn-primary  " id="Rg_lib"  href="{{route('registroHotel')}}"   ><i class="fas fa-atlas"></i> Registro Hotel </a>
+                        <a class="dropdown-item btn btn-primary  " id="Rg_lib"  href="{{route('registroHabitacion')}}"   ><i class="fas fa-atlas"></i> Registro Habitación </a>
+                        <a class="dropdown-item btn btn-primary  " id="Rg_cat"  href="{{route('registroTipoHab')}}"   ><i class="fas fa-atlas"></i> Tipo de Habitación </a>
+                        <a class="dropdown-item btn btn-primary  " id="Rg_lib"  href="{{route('registroEstadHabitacion')}}"   ><i class="fas fa-atlas"></i> Estado Habitación </a>
+                        <a class="dropdown-item btn btn-primary  " id="Rg_lib"  href="{{route('registroHabitacion')}}"   ><i class="fas fa-atlas"></i> Metodo de Pago </a>
+                        <a class="dropdown-item btn btn-primary  " id="Rg_cat"  href="{{route('registroCliente')}}"   ><i class="fas fa-atlas"></i> Pago</a>
+    
+    
+                    </div>
+                </li>
+                <li class="nav-item dropdown"  >
+                    <a style="color:rgb(2, 2, 2)" class="nav-link dropdown-toggle  " href="#" id="navbarDropdown" role="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Registro de Clientes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="menuc" style="background:-webkit-linear-gradient(left top,#FFC300  ,#2980B9);" >
+                        <a class="dropdown-item btn btn-primary  " id="Rg_lib"  href="{{route('registroHotel')}}"   ><i class="fas fa-atlas"></i> Reserva </a>
+                        <a class="dropdown-item btn btn-primary  " id="Rg_cat"  href="{{route('registroCliente')}}"   ><i class="fas fa-atlas"></i> Registro Cliente </a>
+    
+                    </div>
+                </li>        
+                <li class="nav-item dropdown  "  >
+                    <a style="color:rgb(0, 0, 0)" class="nav-link dropdown-toggle  " href="#" id="navbarDropdown" role="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Mostrar Datos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="menuc" style="background:-webkit-linear-gradient(left top,#FFC300  ,#2980B9);" >
+                        <a class="dropdown-item btn btn-primary  " id="Rg_lib"  href="{{route('mostrar')}}"   ><i class="fas fa-atlas"></i> Hoteles Registrados </a>
+                        <a class="dropdown-item btn btn-primary  " id="Rg_lib"  href="{{route('mostrarhabit')}}"   ><i class="fas fa-atlas"></i> Habitaciones Registradas </a>
+    
+                    </div>
+                </li>
+            </ul>
+         </div>
+      </nav>
+
+
+
+      
+    <nav  id="top2" class="navbar navbar-expand-lg navbar-dark ">
+       
+        
+    </nav>   
     <main class="py-4">
         @yield('content')
     </main>
