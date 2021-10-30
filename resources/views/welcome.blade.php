@@ -78,11 +78,9 @@
         </div>
 
         <div class="links">
-            <a href=#>Caracteristicas</a>
-            <a href=#>Ventajas y Desventajas</a>
-            <a href="https://www.kali.org/docs/">Información Adicional</a>
-            <a href="https://drive.google.com/drive/u/1/folders/1qq-mES_td1CHDyohnjWo74jIRIWZZ_YO">Documentación</a>
-            <a href="https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:" > <img src="https://assets.ubuntu.com/v1/83ff4203-awshp-strip-customers.png" width="100" height="100"></a>
+            <a href="https://drive.google.com/drive/u/1/folders/12xHIwtjk8OwWnpDuO53XfgKk9FJQl3gd" > <img src="https://yasehacerlo.com/wp-content/uploads/2016/05/Carpetas-1.png" width="100" height="100">Documentación</a>
+
+
 
         </div>
     </div>

@@ -45,9 +45,7 @@
                     </div>
 
 
-
-
-                    <form action="#" method="POST">
+                    <form action="{{route('registrarHabitacion')}}" method="POST">
                         @csrf
                         @method('POST')
                         <div class="row">
@@ -72,7 +70,7 @@
                             <div class="col-6 offset-3">
                                 <div class="form-group">
                                     <label>Capacidad:</label>
-                                    <input type="text" name="capacidad" id="capacidad" placeholder="Ingresa la capacidad de personas por habitación" class="form-control">
+                                    <input type="text" name="cantidad_huespe" id="capacidad" placeholder="Ingresa la capacidad de personas por habitación" class="form-control">
                                 </div>
                             </div>
                         </div>
@@ -84,19 +82,33 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row  ">
                             <div class="col-6 offset-3">
-                                <div class="form-group">
-                                    <label>Tipo de  Habitación:</label>
-                                    <input type="text" name="tipoHabitacion" id="tipoHabitacion" placeholder="Ingresa que tipo de habitación es" class="form-control">
-                                </div>
+                            <div class="form-group">
+                                    <label >Tipo de Habitacion:</label>
+                            <select name="tipoHabitacion" class="form-control col-md-9 border border-info" >
+                                <option value="">Elija Tipo </option>
+
+                                @foreach( $tipos as $tipo)
+                                    <option value="{{$tipo->id_tipo}}"> {{$tipo->descripcion}}  </option>
+                                @endforeach
+                            </select>
+                            </div>
                             </div>
                         </div>
+
+
                         <div class="row">
                             <div class="col-6 offset-3">
                                 <div class="form-group">
                                     <label>Estado:</label>
-                                    <input type="text" name="estado" id="estado" placeholder="El estado de la habitación es" class="form-control">
+                                    <select name="estado" class="form-control col-md-9 border border-info" >
+                                        <option value="">Elija el estado</option>
+
+                                        @foreach( $estados as $estado)
+                                            <option value="{{$estado->id_hbs}}"> {{$estado->estado}}  </option>
+                                        @endforeach
+                                    </select>
                                 </div>
                             </div>
                         </div>

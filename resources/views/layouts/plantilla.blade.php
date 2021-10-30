@@ -9,35 +9,49 @@
 </head>
 <body>
 <nav style="background:-webkit-linear-gradient(left top,#FFC300  ,#2980B9);" class="navbar navbar-expand-lg navbar-dark   shadow-sm p-2 rounded-bottom mb-5">
-    <a class="navbar-brand" href="http://127.0.0.1:8000/"   >  SOHITWEB    </a>
+    <a class="navbar-brand" href="/"   >  SOHITWEB    </a>
 
     <button class="navbar-toggler" type="button" data-tog   gle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span  class="navbar-toggler-icon"></span>
     </button>
 
     <div  id="navbarSupportedContent">
-        <a class="navbar-brand "   href="http://127.0.0.1:8000/"  style=" color:black; "><i class="fas fa-home"></i></a>
+        <a class="navbar-brand "   href="/"  style=" color:black; "><i class="fas fa-home"></i></a>
     </div>
 
     <div class="collapse navbar-collapse  " id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item dropdown  "  >
                 <a style="color:white" class="nav-link dropdown-toggle  " href="#" id="navbarDropdown" role="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Registrarse
+                    Registro de Hoteles
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="menuc" style="background:-webkit-linear-gradient(left top,#FFC300  ,#2980B9);" >
                     <a class="dropdown-item btn btn-primary  " id="Rg_lib"  href="{{route('registroHotel')}}"   ><i class="fas fa-atlas"></i> Registro Hotel </a>
                     <a class="dropdown-item btn btn-primary  " id="Rg_lib"  href="{{route('registroHabitacion')}}"   ><i class="fas fa-atlas"></i> Registro Habitación </a>
+                    <a class="dropdown-item btn btn-primary  " id="Rg_cat"  href="{{route('registroTipoHab')}}"   ><i class="fas fa-atlas"></i> Tipo de Habitación </a>
+                    <a class="dropdown-item btn btn-primary  " id="Rg_lib"  href="{{route('registroEstadHabitacion')}}"   ><i class="fas fa-atlas"></i> Estado Habitación </a>
+                    <a class="dropdown-item btn btn-primary  " id="Rg_lib"  href="{{route('registroHabitacion')}}"   ><i class="fas fa-atlas"></i> Metodo de Pago </a>
+                    <a class="dropdown-item btn btn-primary  " id="Rg_cat"  href="{{route('registroCliente')}}"   ><i class="fas fa-atlas"></i> Pago</a>
+
+
+                </div>
+            <li class="nav-item dropdown  "  >
+                <a style="color:white" class="nav-link dropdown-toggle  " href="#" id="navbarDropdown" role="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Registro de Clientes
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="menuc" style="background:-webkit-linear-gradient(left top,#FFC300  ,#2980B9);" >
+                    <a class="dropdown-item btn btn-primary  " id="Rg_lib"  href="{{route('registroHotel')}}"   ><i class="fas fa-atlas"></i> Reserva </a>
                     <a class="dropdown-item btn btn-primary  " id="Rg_cat"  href="{{route('registroCliente')}}"   ><i class="fas fa-atlas"></i> Registro Cliente </a>
 
                 </div>
+
             <li class="nav-item dropdown  "  >
                 <a style="color:white" class="nav-link dropdown-toggle  " href="#" id="navbarDropdown" role="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Mostrar Datos
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="menuc" style="background:-webkit-linear-gradient(left top,#FFC300  ,#2980B9);" >
                     <a class="dropdown-item btn btn-primary  " id="Rg_lib"  href="{{route('mostrar')}}"   ><i class="fas fa-atlas"></i> Hoteles Registrados </a>
-
+                    <a class="dropdown-item btn btn-primary  " id="Rg_lib"  href="{{route('mostrarhabit')}}"   ><i class="fas fa-atlas"></i> Habitaciones Registradas </a>
 
                 </div>
         </ul>
